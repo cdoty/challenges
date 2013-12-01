@@ -22,7 +22,7 @@ void multiply(int _iValue1, int _iValue2, int& _iResult)
 {
 	_iResult	= 0;
 	
-	while (_iValue2 >= 1)
+	while (_iValue2 > 0)
 	{
 		if (_iValue2 & 1)
 		{
