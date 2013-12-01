@@ -5,7 +5,7 @@ void divide(int _iValue1, int _iValue2, int& _iResult, int& _iRemainder);
 
 int main()
 {
-	int	iValue1 = 65;
+	int	iValue1 = 24;
 	int	iValue2 = 25;
 
 	printf("%d x %d = ", iValue1, iValue2);
@@ -34,9 +34,9 @@ void multiply(int _iValue1, int _iValue2, int& _iResult)
 {
 	_iResult	= 0;
 	
-	for (int iLoop = 0; iLoop < 32; ++iLoop)
+	while (_iValue1 > 0)
 	{
-		if (1 == (_iValue1 & 1))
+		if (_iValue1 & 1)
 		{
 			_iResult	+= _iValue2;
 		}
